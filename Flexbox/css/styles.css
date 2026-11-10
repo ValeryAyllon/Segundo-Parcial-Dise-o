@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    height: 100vh;
+    height: 100dvh;
+}
+
+header{
+    background: rgb(207,93,93); 
+    padding: 10px;
+    color: white;
+    height: 20%;
+    text-aling:center;    
+}
+
+footer{
+    background: rgb(104,104,221);
+    padding: 10px;
+    color: white;
+    height: 20%;
+    text-align: center;
+}
+
+.slide.container {
+    display: none;
+    gap: 10px;
+    flex-direction: row; 
+    justify-contemt:center;
+    height: 60%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.slide.container div{
+   color: white;
+    padding: 10px;
+    background: red;
+    flex:content;
+
+}
