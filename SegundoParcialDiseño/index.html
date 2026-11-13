@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>México Chico — Presentación</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="page">
+        <header class="header">
+            <div><strong>BOLIVIA ESTA ENFRENTANDO UNA AMENAZA SILENCIOSA?</strong><span>Presentación informativa · Bolivia · Noviembre 2026</span></div>
+            <button id="openAI" class="button secondary" type="button">Preguntar a la IA</button>
+        </header>
+        <main class="presentation">
+            <div class="labelbar"><span id="chapter">CONTEXTO</span><span id="counter">1 / 10</span></div>
+            <section id="slide" class="slide" aria-live="polite"></section>
+            <div class="bottom"><button id="prev" class="button secondary" type="button">← Anterior</button><span
+                    id="progress">Diapositiva 1 de 10</span><button id="next" class="button primary"
+                    type="button">Siguiente →</button></div>
+        </main>
+        <div class="bottom-note">Información basada en fuentes públicas. Las denuncias no equivalen a condenas.</div>
+    </div>
+    <div id="aiOverlay" class="overlay" hidden>
+        <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="aiHeading">
+            <div class="dialoghead">
+                <div><strong id="aiHeading">Consultar con IA</strong>
+                    <p id="aiStatus">Ingresa tu clave para conectarte con Gemini</p>
+                </div><button id="closeAI" class="button secondary" type="button">Cerrar</button>
+            </div>
+            <div class="config"><label for="apiKey">Clave de Gemini (no se guarda)</label><input type="password"
+                    id="apiKey" placeholder="Pega tu clave de Google AI Studio" autocomplete="off"><label
+                    for="model">Modelo</label><input id="model" value="gemini-2.5-flash" aria-label="Modelo de Gemini">
+                <p>Usa una clave propia solo en tu computadora. En una web estática la clave puede ser visible en las
+                    solicitudes del navegador: no la publiques ni compartas.</p>
+            </div>
+            <div class="messages" id="messages" aria-live="polite">
+                <div class="message bot">Pregúntame sobre los antecedentes, ubicación, problemas y hechos reportados de
+                    México Chico.</div>
+            </div>
+            <div class="shortcuts"><button class="button secondary" type="button"
+                    data-q="¿Dónde queda México Chico?">Ubicación</button><button class="button secondary" type="button"
+                    data-q="¿Qué ocurrió en 2026 en México Chico?">Actualidad</button><button class="button secondary"
+                    type="button" data-q="Resume los principales problemas de México Chico">Problemas</button></div>
+            <form id="chatForm" class="chatbar"><input id="question" placeholder="Escribe tu pregunta"
+                    autocomplete="off" aria-label="Pregunta a Gemini"><button id="send" class="button primary"
+                    type="submit">Enviar</button></form>
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
