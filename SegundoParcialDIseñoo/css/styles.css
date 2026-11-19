@@ -6,9 +6,13 @@ html,
 body {
     margin: 0;
     height: 100vh;
-    overflow: hidden; 
+    overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(rgba(7, 97, 117, 0.88), rgba(5, 75, 90, 0.95));
+    background-color: rgb(7, 71, 117);
+    background-image: url('../imagenes/imagen8.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 button {
@@ -37,7 +41,8 @@ button:disabled {
     justify-content: space-between;
     gap: 14px;
     margin-bottom: 15px;
-    color: #fff;
+    color: #fffdfd;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
 }
 
 .header strong {
@@ -49,19 +54,19 @@ button:disabled {
 .header span {
     display: block;
     font-size: 14px;
-    color: #eef7f0;
+    color: #ffffff;
     margin-top: 2px;
 }
 
 .presentation {
-    background: rgb(85, 192, 216);
-    border: 1px solid #e1e6ed;
+    background: rgb(122, 141, 218);
+    border: 1px solid #ffffff;
     border-radius: 12px;
-    height: 520px; 
+    height: 520px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45);
 }
 
 .labelbar {
@@ -69,7 +74,8 @@ button:disabled {
     justify-content: space-between;
     padding: 14px 32px 10px;
     border-bottom: 1px solid #f4f8db;
-    color: #082da7;
+    color: #0d1aa9;
+    background: rgba(1, 31, 40, 0.929);
     font-size: 12px;
     font-weight: 700;
     letter-spacing: .07em;
@@ -78,13 +84,45 @@ button:disabled {
 .slide-container {
     flex: 1;
     position: relative;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .slide {
     display: none;
     padding: 20px 40px;
     height: 100%;
+    background-color: rgb(255, 248, 248);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide-1 {
+    background-image: url('../imagenes/imagen9.png');
+}
+
+.slide-2 {
+    background-image: url('../imagenes/imagen3.png');
+}
+
+.slide-3 {
+    background-image: url('../imagenes/imagen4.png');
+}
+
+.slide-4 {
+    background-image: url('../imagenes/imagen5.png');
+}
+
+.slide-5 {
+    background-image: url('../imagenes/imagen6.png');
+}
+
+.slide-6 {
+    background-image: url('../imagenes/imagen7.png');
+}
+
+.slide-7 {
+    background-image: url('../imagenes/imagen1.png');
 }
 
 .slide.active {
@@ -95,7 +133,11 @@ button:disabled {
 
 .slide .eyebrow {
     font-size: 11px;
-    color: #234aab;
+    color: hsl(202, 68%, 27%);
+    background: rgba(241, 241, 241, 0.88);
+    padding: 3px 8px;
+    border-radius: 4px;
+    width: fit-content;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -103,13 +145,14 @@ button:disabled {
 .slide .title {
     font-size: clamp(20px, 2.6vw, 28px);
     line-height: 1.15;
-    color: #163d4e;
+    color: #fffffff6;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
     margin: 8px 0 12px;
 }
 
 .slide .title em {
     font-style: normal;
-    color: #2355ab;
+    color: #96ede4;
 }
 
 .slide-grid {
@@ -126,7 +169,7 @@ button:disabled {
 }
 
 .bullet-card {
-    background: #96ede4;
+    background: rgba(150, 237, 228, 0.92);
     border: 1px solid #b2d7de;
     padding: 8px 12px;
     border-radius: 8px;
@@ -134,13 +177,13 @@ button:disabled {
 
 .bullet-card h4 {
     margin: 0 0 2px 0;
-    color: #1a3857;
+    color: #0b1563;
     font-size: 13px;
 }
 
 .bullet-card p {
     margin: 0;
-    color: #18186d;
+    color: #0e0baf;
     font-size: 12px;
     line-height: 1.25;
 }
@@ -151,21 +194,21 @@ button:disabled {
     object-fit: cover;
     border-radius: 8px;
     border: 2px solid #b2d7de;
-    background: #ffffff;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    background: #f3fff1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .button {
     border: 1px solid #4238d4;
-    padding: 8px 16px;
-    border-radius: 7px;
+    padding: 10px 14px;
+    border-radius: 6px;
     font-weight: bold;
     white-space: nowrap;
 }
 
 .primary {
-    background: #234cab;
-    color: #ecdde7;
+    background: #1053b0;
+    color: #ffffff;
     border-color: #ebfefb;
 }
 
@@ -185,7 +228,7 @@ button:disabled {
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    background: #d5e6d7;
+    background: #001821;
 }
 
 .bottom span {
@@ -198,6 +241,7 @@ button:disabled {
     text-align: center;
     font-size: 11px;
     color: #eaf4ea;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.85);
     padding: 8px;
 }
 
@@ -205,6 +249,7 @@ button:disabled {
     .slide-grid {
         grid-template-columns: 1fr;
     }
+
     .single-slide-img {
         height: 140px;
     }
