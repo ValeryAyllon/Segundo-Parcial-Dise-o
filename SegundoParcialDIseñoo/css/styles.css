@@ -8,7 +8,7 @@ body {
     height: 100vh;
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(7, 71, 117);
+    background-color: rgb(38, 64, 106);
     background-image: url('../imagenes/imagen8.png');
     background-size: cover;
     background-position: center;
@@ -59,7 +59,7 @@ button:disabled {
 }
 
 .presentation {
-    background: rgb(122, 141, 218);
+    background: rgb(6, 75, 87);
     border: 1px solid #ffffff;
     border-radius: 12px;
     height: 520px;
@@ -74,7 +74,7 @@ button:disabled {
     justify-content: space-between;
     padding: 14px 32px 10px;
     border-bottom: 1px solid #f4f8db;
-    color: #0d1aa9;
+    color: #3213ac;
     background: rgba(1, 31, 40, 0.929);
     font-size: 12px;
     font-weight: 700;
@@ -91,7 +91,7 @@ button:disabled {
     display: none;
     padding: 20px 40px;
     height: 100%;
-    background-color: rgb(255, 248, 248);
+    background-color: rgb(243, 239, 245);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -133,7 +133,7 @@ button:disabled {
 
 .slide .eyebrow {
     font-size: 11px;
-    color: hsl(202, 68%, 27%);
+    color: hsl(210, 68%, 27%);
     background: rgba(241, 241, 241, 0.88);
     padding: 3px 8px;
     border-radius: 4px;
@@ -145,14 +145,14 @@ button:disabled {
 .slide .title {
     font-size: clamp(20px, 2.6vw, 28px);
     line-height: 1.15;
-    color: #fffffff6;
+    color: #efe0e0f6;
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
     margin: 8px 0 12px;
 }
 
 .slide .title em {
     font-style: normal;
-    color: #96ede4;
+    color: #33b3cc;
 }
 
 .slide-grid {
@@ -169,10 +169,10 @@ button:disabled {
 }
 
 .bullet-card {
-    background: rgba(150, 237, 228, 0.92);
+    background: rgba(103, 224, 224, 0.92);
     border: 1px solid #b2d7de;
     padding: 8px 12px;
-    border-radius: 8px;
+    border-radius: 13px;
 }
 
 .bullet-card h4 {
@@ -207,7 +207,7 @@ button:disabled {
 }
 
 .primary {
-    background: #1053b0;
+    background: #08367b;
     color: #ffffff;
     border-color: #ebfefb;
 }
@@ -246,11 +246,55 @@ button:disabled {
 }
 
 @media(max-width: 800px) {
+    html,
+    body {
+        height: auto;
+        min-height: 100vh;
+        overflow-y: auto;
+    }
+
+    .page {
+        height: auto;
+        min-height: 100vh;
+        padding: 12px 14px;
+        justify-content: flex-start;
+    }
+
+    .presentation {
+        height: auto;
+        min-height: 460px;
+        overflow: visible;
+    }
+
+    .slide {
+        padding: 16px 18px;
+        height: auto;
+    }
+
     .slide-grid {
         grid-template-columns: 1fr;
+        gap: 12px;
     }
 
     .single-slide-img {
         height: 140px;
+    }
+
+    .bottom {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 12px 14px;
+        gap: 10px;
+    }
+
+    .bottom span {
+        width: 100%;
+        text-align: center;
+        color: #e2f1ff;
+    }
+
+    .button {
+        padding: 8px 12px;
+        font-size: 13px;
     }
 }
