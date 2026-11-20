@@ -60,6 +60,7 @@ button:disabled {
 
 .presentation {
     background: rgb(6, 75, 87);
+    background: rgb(85, 194, 216);
     border: 1px solid #ffffff;
     border-radius: 12px;
     height: 520px;
@@ -92,13 +93,14 @@ button:disabled {
     padding: 20px 40px;
     height: 100%;
     background-color: rgb(243, 239, 245);
+    background-color: rgb(85, 194, 216);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .slide-1 {
-    background-image: url('../imagenes/imagen9.png');
+    background-image: url('../imagenes/imagen1.png');
 }
 
 .slide-2 {
